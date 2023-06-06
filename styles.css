@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('fonts/Outfit-VariableFont_wght.ttf') format('TrueType');
+}
+
+:root {
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-gray: hsl(212, 45%, 89%);
+    --clr-gray-blue: hsl(220, 15%, 55%);
+    --clr-blue-dark: hsl(218, 44%, 22%);
+    --border-radius: 1em;
+    --padding: 1em;
+}
+
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    font: inherit;
+    padding: 0;
+}
+
+img,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    height: 100vh;
+    background: var(--clr-gray);
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    gap: var(--padding);
+}
+
+@media (min-width: 600px) {
+    body {
+        margin-inline: 10px;
+
+    }
+}
+
+main {
+    max-width: 18.5em;
+    display: grid;
+    place-items: center;
+    background: var(--clr-white);
+    border-radius: var(--border-radius);
+    padding: var(--padding) var(--padding) calc(var(--padding) * 2) var(--padding);
+    gap: var(--padding);
+    box-shadow: 0 4px 8px -4px var(--clr-gray-blue);
+}
+
+main img {
+    border: none;
+    padding: 0;
+    margin: 0;
+    border-radius: calc(var(--border-radius) / 2);
+    cursor: pointer;
+}
+
+
+main h1 {
+    color: var(--clr-blue-dark);
+    font-weight: 700;
+    font-size: 1.25em;
+}
+
+main p {
+    font-weight: 400;
+    color: var(--clr-gray-blue);
+}
+
+
+
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: inherit;
+    text-decoration: underline;
+}
